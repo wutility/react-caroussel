@@ -33,10 +33,14 @@ import "react-caroussel/dist/index.css";
 ```jsx
 <ReactCaroussel
   slidesToShow={3}
-  slidesToScroll={1}
-  infinite={false}
+  slidesToScroll={3}
+  infinite={true}
   autoplay={false}
-  speed={2000}>
+  speed={2000}    // speed of autoplay
+  display={{ 
+    arrows: true, 
+    dots: true 
+  }}>
   <div>1</div>
   <div>2</div>
   <div>3</div>

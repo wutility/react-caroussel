@@ -4,10 +4,10 @@ export default function App () {
 
   return (
     <div className="container">
-
+      <h3>ReactCaroussel</h3>
       <ReactCaroussel
         slidesToShow={3}
-        slidesToScroll={1}
+        slidesToScroll={3}
         infinite={true}
         autoplay={false}
         speed={2000}>
