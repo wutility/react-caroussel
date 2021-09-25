@@ -16,7 +16,7 @@ export default function App () {
         infinite={true}
         autoplay={false}
         speed={2000}>
-        {Array(9).fill(0).map((val, index) => <Card key={index} index={index} />)}
+        {Array(9).fill(0).map((_, index) => <Card key={index} index={index} />)}
       </ReactCaroussel>
     </div>
   );

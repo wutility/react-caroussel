@@ -4,7 +4,7 @@
 }
 
 .caroussel-content {
- overflow: hidden;
+  overflow: hidden;
 }
 
 .caroussel-content>div {
@@ -18,18 +18,23 @@
 
 .caroussel-item {
   height: 100%;
-  flex:0 0 auto;
+  flex: 0 0 auto;
 }
 
-.caroussel-item:last-child {margin-right: 0;}
+.caroussel-item:last-child {
+  margin-right: 0;
+}
 
 .caroussel>button {
   display: none;
 }
 
-.caroussel:hover>button {display: block;}
+.caroussel:hover>button {
+  display: block;
+}
 
-.btn-next, .btn-prev {
+.btn-next,
+.btn-prev {
   height: 100%;
   position: absolute;
   top: 0;
@@ -37,7 +42,7 @@
   border: 0;
   cursor: pointer;
   z-index: 1;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 .btn-next {
@@ -66,6 +71,8 @@
   cursor: pointer;
 }
 
-.btn-next:hover, .btn-prev:hover,.caroussel-dots>*:hover {
-  opacity:1;
+.btn-next:hover,
+.btn-prev:hover,
+.caroussel-dots>*:hover {
+  opacity: 1;
 }

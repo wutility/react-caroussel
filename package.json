@@ -1,6 +1,6 @@
 {
   "name": "react-caroussel",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Carousel.",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -8,9 +8,6 @@
     "dist/*"
   ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
     "lib:watch": "set NODE_ENV=developement && rollup -w -c",
     "lib:build": "set NODE_ENV=production && rollup -c"
   },
@@ -35,18 +32,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.1",
     "rollup-plugin-terser": "^7.0.2"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "keywords": [
     "react",

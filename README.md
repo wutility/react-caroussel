@@ -36,7 +36,7 @@ import "react-caroussel/dist/index.css";
   slidesToScroll={3}
   infinite={true}
   autoplay={false}
-  speed={2000}    // speed of autoplay
+  speed={2}    // 2s: speed of autoplay
   display={{ 
     arrows: true, 
     dots: true 

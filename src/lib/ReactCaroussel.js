@@ -52,7 +52,7 @@ export default function ReactCaroussel ({
     }
   }, [counter, setCounter])
 
-  return (<div className="caroussel" tabIndex="0">
+  return (<div className="caroussel">
 
     {display.arrows && <button type="button" className="btn-prev" onClick={onPrev}>
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor">

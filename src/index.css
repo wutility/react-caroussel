@@ -13,7 +13,7 @@ body {
 .container { padding: 10px 150px;}
 
 p {font-size: 14px;}
-/************** caroussel ****************/
+
 .caroussel-content {
   margin-left: -10px;
   margin-right: -10px;
@@ -22,7 +22,7 @@ p {font-size: 14px;}
 .caroussel-item {
   padding: 10px;
 }
-/************** end caroussel ****************/
+
 .card {    
   width: 100%;
   background-color: #fff; 
