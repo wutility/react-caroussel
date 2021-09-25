@@ -61,16 +61,8 @@ export default function ReactCaroussel ({
     </button>}
 
     <div className="caroussel-content">
-      <div style={{ transform: `translateX(${(100 / slidesToShow) * counter}%)` }} >
-
-        {children.map((child, key) => <div
-          key={key}
-          className="caroussel-item"
-          style={{ width: `calc(100% / ${slidesToShow})` }}
-          tabIndex="-1"
-        >
-          {child}
-        </div>)}
+      <div className="row" style={{ transform: `translateX(${(100 / slidesToShow) * counter}%)` }}>
+        {children.map((child, key) => <div key={key} className={"col-" + slidesToShow}>{child}</div>)}
       </div>
     </div>
 

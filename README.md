@@ -9,7 +9,6 @@
   <img src="https://badgen.net/bundlephobia/dependency-count/react-caroussel" alt="react caroussel" />
   <img src="https://badgen.net/npm/v/react-caroussel" alt="react caroussel" />
   <img src="https://badgen.net/npm/dt/react-caroussel" alt="react caroussel" />
-  <img src="https://data.jsdelivr.com/v1/package/npm/react-caroussel/badge" alt="react caroussel"/>
 </div>  
 
 <hr />  
