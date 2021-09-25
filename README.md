@@ -5,13 +5,15 @@
 - Zero dependencies.
 
 <div align="center" style="width:100%; text-align:center;">
-<img src="https://badgen.net/bundlephobia/minzip/react-caroussel" alt="react caroussel" />
-  <img src="https://badgen.net/bundlephobia/dependency-count/react-caroussel" alt="react caroussel" />
-  <img src="https://badgen.net/npm/v/react-caroussel" alt="react caroussel" />
-  <img src="https://badgen.net/npm/dt/react-caroussel" alt="react caroussel" />
+  <img src="https://badgen.net/bundlephobia/minzip/react-caroussel" alt="react carousel" />
+  <img src="https://badgen.net/bundlephobia/dependency-count/react-caroussel" alt="react carousel" />
+  <img src="https://badgen.net/npm/v/react-caroussel" alt="react carousel" />
+  <img src="https://badgen.net/npm/dt/react-caroussel" alt="react carossel" />
 </div>  
 
 <hr />  
+
+![react carousel](https://i.ibb.co/r2LKRmP/react-caroussel.gif)
 
 ## [Demo](https://codesandbox.io/s/react-carousel-ftzy5)
 
