@@ -1,5 +1,10 @@
 import ReactCaroussel from "./lib/ReactCaroussel";
 
+const Card = ({ index }) => <div className="card">
+  <h1>Card {index}</h1>
+  <p>liprum iprum liprum iprum liprum iprum liprum iprum liprum iprum liprum iprum</p>
+</div>
+
 export default function App () {
 
   return (
@@ -11,15 +16,7 @@ export default function App () {
         infinite={true}
         autoplay={false}
         speed={2000}>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
+        {Array(9).fill(0).map((val, index) => <Card key={index} index={index} />)}
       </ReactCaroussel>
     </div>
   );

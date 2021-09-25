@@ -5,9 +5,9 @@ export default function ReactCaroussel ({
   children,
   slidesToShow = 1,
   slidesToScroll = 1,
-  autoplay = false,
   infinite = false,
-  speed = 2000,
+  autoplay = false,
+  speed = 2,
   display = { arrows: true, dots: true }
 }) {
 
@@ -47,7 +47,7 @@ export default function ReactCaroussel ({
 
   useEffect(() => {
     if (autoplay) {
-      let id = setInterval(onNext, speed);
+      let id = setInterval(onNext, speed * 1000);
       return () => clearInterval(id)
     }
   }, [counter, setCounter])
@@ -60,18 +60,18 @@ export default function ReactCaroussel ({
       </svg>
     </button>}
 
-    <div
-      className="caroussel-content"
-      style={{ transform: `translateX(${(100 / slidesToShow) * counter}%)` }}
-    >
+    <div className="caroussel-content">
+      <div style={{ transform: `translateX(${(100 / slidesToShow) * counter}%)` }} >
 
-      {children.map((child, key) => <div
-        key={key}
-        className="caroussel-item"
-        style={{ width: `calc(100% / ${slidesToShow})` }}
-      >
-        {child}
-      </div>)}
+        {children.map((child, key) => <div
+          key={key}
+          className="caroussel-item"
+          style={{ width: `calc(100% / ${slidesToShow})` }}
+          tabIndex="-1"
+        >
+          {child}
+        </div>)}
+      </div>
     </div>
 
     {display.arrows && <button type="button" className="btn-next" onClick={onNext}>
@@ -80,7 +80,7 @@ export default function ReactCaroussel ({
       </svg>
     </button>}
 
-    {display.dots && <div className="dots">
+    {display.dots && <div className="caroussel-dots">
       {Array(Math.ceil(children.length / slidesToShow)).fill(0).map((_, i) => <span
         style={{ opacity: currDot === i ? 1 : 0.4 }}
         key={i}
